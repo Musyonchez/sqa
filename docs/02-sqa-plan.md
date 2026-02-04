@@ -9,7 +9,7 @@
 ## 1. Coding Standards
 
 ### 1.1 Programming Languages
-- **Backend**: Python 3.10+
+- **Backend**: Python 3.10+ with FastAPI
 - **Frontend Framework**: Next.js 14+ (React 18+)
 - **Styling**: Tailwind CSS 3.x
 - **Language**: TypeScript 5.x
@@ -38,6 +38,7 @@ Date: 2026-02-04
 import datetime
 from typing import List, Dict
 
+from fastapi import FastAPI, HTTPException
 import pandas as pd
 
 from models.student import Student
@@ -625,7 +626,7 @@ export function Input({ className, type, ...props }: InputProps) {
 
 #### Unit Testing
 - **Coverage requirement**: Minimum 80% code coverage
-- **Backend Framework**: pytest (Python)
+- **Backend Framework**: pytest (Python/FastAPI)
 - **Frontend Framework**: Jest + React Testing Library (Next.js/React)
 - **E2E Framework**: Playwright
 - **Naming convention**: `test_[function_name]_[scenario]`
@@ -986,7 +987,7 @@ A user story is done when:
 - **CI/CD**: GitHub Actions, Vercel
 - **Frontend**: Next.js 14+, React 18+, TypeScript 5.x
 - **Styling**: Tailwind CSS 3.x, shadcn/ui
-- **Backend**: Python 3.10+, FastAPI (optional)
+- **Backend**: Python 3.10+ with FastAPI
 - **Database**: Supabase (PostgreSQL), Prisma ORM
 - **Testing**: pytest, Jest, React Testing Library, Playwright
 - **Code Quality**: ESLint, Prettier, Black, Flake8, TypeScript Compiler
